@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #EAE8FD 0%, #FCE5E6 100%);
+    color: #f6f6f6;
+}
+
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    width: 615px;
+    display: flex;
+    flex-wrap: nowrap; /*Fazer alinhamento dos conteudos em coluna, apos usar o display flex*/
+    gap: 40px; /*Separar os elementos*/
+}
+
+.apresentacao-conteudo-titulo {
+    font-family: Public Sans;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 48px;
+    text-align: center;    
+    background: linear-gradient(90deg, #28C76F 0%, #5A4AFF 50%, #FF3739 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.apresentacao-conteudo-texto {
+    font-family: Public Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #432005;
+    
+}
+
+.apresentacao-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao-botao {
+    width: Hug (215px)px;
+    height: Fixed (49.16px)px;
+    top: 426px;
+    left: 612px;
+    gap: 0px;
+    border-radius: 8px 0px 0px 0px;
+    opacity: 0px;
+    color: #FFBA02;
+    ;        
+
+}
+
+.parte_de_cima {
+    width: Fixed (1,126px)px;
+    height: Fixed (71.7px)px;
+    top: 16.39px;
+    left: 157px;
+    padding: 13px 32px 13px 32px;
+    gap: 105px;
+    border-radius: 8px 0px 0px 0px;
+    border: 2px 0px 0px 0px;
+    opacity: 0px;
+
+
+}
+
+.home_parte_cima {
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #FFBA02;
+    width: 42px;
+    margin-top: 41.24px;
+    margin-left: 405px;
+    margin-bottom: 570.76px;
+    margin-right: 993px;
+}
+
+.logo {
+    width: 101px;
+    height: 44px;
+    margin-top: 30.24px;
+    margin-left: 189px;
+    margin-bottom: 559.76px;
+    margin-right: 1150px;
+}
