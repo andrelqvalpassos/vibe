@@ -7,102 +7,239 @@ body {
     color: #f6f6f6;
 }
 
-
-.titulo-destaque {
-    color: #22D4FD;
-}
-
 * {
-    margin: 0;
     padding: 0;
 }
 
-.apresentacao {
-    margin: 10% 15%;
+.parte_de_cima {
+    display: flex;
+    justify-content: center; /* Alinha os itens à esquerda */
+    align-items: center;
+    padding: 10px 20px; /* Reduzindo o padding para aproximar os elementos */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Ajuste a distância do topo conforme necessário */
+}
+
+.menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.menu a {
+    margin: 0 15px; /* Reduzindo a margem entre os itens do menu */
+    text-decoration: none;
+    color: #333;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+}
+
+.contact-button a {
+    background-color: #FFBA02;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button {
+    margin-left:200px;
+}
+
+.apresentacao {
+    margin: 3% 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .apresentacao-conteudo {
-    width: 615px;
+    width: 100%; /* Ajuste a largura conforme necessário */
+    max-width: 800px; /* Defina um valor máximo para a largura */
     display: flex;
-    flex-wrap: nowrap; /*Fazer alinhamento dos conteudos em coluna, apos usar o display flex*/
-    gap: 40px; /*Separar os elementos*/
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    gap: 20px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
 }
 
 .apresentacao-conteudo-titulo {
-    font-family: Public Sans;
+    width: 934px;
+    height: 98.33px;
+    top: 160px;
+    left: 253px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: 'Public Sans', sans-serif;
     font-size: 42px;
     font-weight: 800;
     line-height: 48px;
-    text-align: center;    
+    text-align: center;
     background: linear-gradient(90deg, #28C76F 0%, #5A4AFF 50%, #FF3739 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .apresentacao-conteudo-texto {
-    font-family: Public Sans;
-    font-size: 18px;
+    width: 934px;
+    height: 98.33px;
+    top: 160px;
+    left: 253px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     text-align: center;
     color: #432005;
-    
 }
 
 .apresentacao-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .apresentacao-botao {
-    width: Hug (215px)px;
-    height: Fixed (49.16px)px;
-    top: 426px;
-    left: 612px;
+    background-color:#FFBA02;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.contact-button .icon {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+    position: relative;
+    top: 3px
+}
+
+.features {
+    padding: 10px ;
+    margin-left: 100px;
+    margin-right: px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.features-title {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #432005
+}
+
+.feature-description {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 22px;
+    text-align: center;
+}
+
+.features_titulo {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    color: #432005;
+
+}
+
+.features_paragrafo {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #432005;
+}
+
+.seila {
+    width: 1465px;
+    height: 100px;
+    top: 1284px;
+    padding: 400px;
     gap: 0px;
-    border-radius: 8px 0px 0px 0px;
+    border-radius: 60px 60px 0px 0px;
     opacity: 0px;
-    color: #FFBA02;
-    ;        
+    background: #F8F7FA;
 
 }
 
-.parte_de_cima {
-    width: Fixed (1,126px)px;
-    height: Fixed (71.7px)px;
-    top: 16.39px;
-    left: 157px;
-    padding: 13px 32px 13px 32px;
-    gap: 105px;
-    border-radius: 8px 0px 0px 0px;
-    border: 2px 0px 0px 0px;
+.features_segunda {
+    width: 252px;
+    height: 36px;
+    top: 1467px;
+    left: 96.52px;
+    gap: 0px;
     opacity: 0px;
 
+    font-family: Public Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: left;
+    color: #432005;
 
 }
 
-.home_parte_cima {
+.features_paragrafo_segunda {
+    width: 244px;
+    height: 44px;
     font-family: Public Sans;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 22px;
     text-align: left;
-    color: #FFBA02;
-    width: 42px;
-    margin-top: 41.24px;
-    margin-left: 405px;
-    margin-bottom: 570.76px;
-    margin-right: 993px;
-}
+    color: #432005;
 
-.logo {
-    width: 101px;
-    height: 44px;
-    margin-top: 30.24px;
-    margin-left: 189px;
-    margin-bottom: 559.76px;
-    margin-right: 1150px;
 }
