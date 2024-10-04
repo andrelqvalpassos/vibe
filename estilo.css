@@ -3,8 +3,7 @@
 body {
     height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #EAE8FD 0%, #FCE5E6 100%);
-    color: #f6f6f6;
+    background-color: white;
 }
 
 * {
@@ -16,7 +15,7 @@ body {
     justify-content: center; /* Alinha os itens à esquerda */
     align-items: center;
     padding: 10px 20px; /* Reduzindo o padding para aproximar os elementos */
-    background-color: #fff;
+    background: #FFFFFF61;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px; /* Ajuste a distância do topo conforme necessário */
 }
@@ -58,14 +57,16 @@ body {
 }
 
 .apresentacao-conteudo {
-    width: 100%; /* Ajuste a largura conforme necessário */
-    max-width: 800px; /* Defina um valor máximo para a largura */
+    width: 100vw; /* Ocupar toda a largura da viewport */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo */
-    gap: 20px;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px; /* Adiciona espaçamento interno */
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px 60px 60px 60px;
+    padding: 170px 0; /* Adiciona espaçamento vertical */
+    margin: 0; /* Remove qualquer margem */
+    background: linear-gradient(90deg, #EAE8FD 0%, #FCE5E6 100%); /* Aplica o gradiente à seção inteira */
+
 }
 
 .apresentacao-conteudo-titulo {
@@ -128,11 +129,12 @@ body {
 }
 
 .features {
-    padding: 10px ;
+    padding: 40px 100px ;
     margin-left: 100px;
-    margin-right: px;
-    background-color: #f9f9f9;
+    margin-right: 100px;
+    background-color: transparent;
     text-align: center;
+    border-radius: 10px;
 }
 
 .features-title {
@@ -144,19 +146,20 @@ body {
 }
 
 .features-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas para telas maiores */
     gap: 20px;
+    padding: 20px;
 }
 
 .feature-card {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    box-shadow: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
     margin: 20px;
-    width: 300px;
     text-align: center;
 }
 
@@ -184,7 +187,27 @@ body {
     text-align: center;
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+    .features-container {
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr; /* Uma coluna em celulares */
+    }
+    }
+
 .features_titulo {
+    width: 944px;
+    height: 84px;
+    top: 718px;
+    left: 248px;
+    gap: 0px;
+    opacity: 0px;
+
     font-family: 'Public Sans', sans-serif;
     font-weight: 800;
     font-size: 26px;
@@ -197,13 +220,13 @@ body {
 .features_paragrafo {
     font-family: 'Public Sans', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #432005;
 }
 
-.seila {
+.features_3 {
     width: 1465px;
     height: 100px;
     top: 1284px;
@@ -212,10 +235,11 @@ body {
     border-radius: 60px 60px 0px 0px;
     opacity: 0px;
     background: #F8F7FA;
+    
 
 }
 
-.features_segunda {
+.features_titulo3 {
     width: 252px;
     height: 36px;
     top: 1467px;
@@ -232,7 +256,7 @@ body {
 
 }
 
-.features_paragrafo_segunda {
+.features_paragrafo_3 {
     width: 244px;
     height: 44px;
     font-family: Public Sans;
@@ -241,5 +265,44 @@ body {
     line-height: 22px;
     text-align: left;
     color: #432005;
+
+}
+
+.feature_card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 16px;
+    position: relative;
+    width: 262px;
+    height: 272px;
+    left: 733.13px;
+    margin-top: -270px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(75, 70, 92, 0.1);
+    border-radius: 6px;
+
+}
+
+.estrela_avaliacao {
+    margin-top: -20px;
+
+
+}
+
+.foto_avaliacao {
+    width: 150px;
+    margin-top: -10px;
+
+}
+
+.feature_descricao3 {
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
 
 }
